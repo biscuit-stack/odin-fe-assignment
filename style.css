@@ -1,0 +1,241 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body, html {
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	font-family: sans-serif;
+}
+
+/* Header */
+
+.header {
+	background-color: #1F2937;
+	color: white;
+	padding: 2rem 0;
+}
+
+.joinBtn:hover {
+    background-color: bisque;
+}
+
+.nav .logo a{
+	font-size: 24px;
+	font-weight: 900;
+	color: #F9FAF8;
+	text-decoration: none;
+}
+
+.nav .logo a:hover{
+	color: #F9FAF8;
+	text-decoration:underline;
+}
+
+.header .container {
+	width: 70vw;
+	margin: 0 auto;
+}
+
+.nav {
+	display: flex;
+	justify-content: space-between;
+}
+
+.header .container .nav-links ul {
+	display: flex;
+	gap: 1rem;
+}
+
+.nav-links ul li a {
+	color: white;
+	text-decoration: none;
+	background-color: #1F2937;
+	transition: background-color 0.5s;
+}
+
+.nav-links ul li a:hover {
+	color: black;
+	background-color: whitesmoke;
+	text-decoration: underline;
+}
+
+li {
+	list-style: none;
+}
+
+.nav-content {
+	height: 250px;
+	width: auto;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	margin: 5rem 0;
+}
+
+/* flex-item */
+.signup {
+	flex: 1 2 0;
+	padding-right: 1rem;
+}
+
+/* flex-item */
+.nav-image {
+	flex: 1;
+	height: 100%;
+}
+
+.nav-image img {
+	/* object-fit:scale-down; */
+	min-width: 100%;
+	max-height: 100%;
+	border: 3px solid black;
+	border-radius: 8px;
+}
+
+.signup button {
+	min-width: 150px;
+	color: white;
+	background-color: #007bff;
+	border-radius: 8px;
+	padding: 8px 2rem;
+	font-weight: bold;
+	border: 0;
+	margin-top: 1rem;
+}
+
+.signup h1 {
+	font-size: 3rem;
+}
+
+.signup p {
+	padding-right: 1rem;
+}
+
+
+/* Random info */
+
+.random-info{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-bottom: 5rem;
+}
+
+.random-info h1 {
+	margin: 3rem;
+	font-size: 36px;
+	font-weight: 900;
+}
+
+.box {
+	width: 200px;
+	text-align: center;
+}
+
+.illustration {
+	width: 200px;
+	height: 200px;
+	border: 4px solid #3882F6;
+	border-radius: 12px;
+}
+
+/* 100% of the width and height set on the parent div (.box)  */
+.illustration img {
+	width: 100%;
+	height: 100%;
+	border-radius: 8px;
+}
+
+.boxes {
+	display: flex;
+	justify-content: center;
+	gap: 3rem;
+	flex-wrap: wrap;
+}
+
+.box p {
+	margin-top: 10px;
+}
+
+/* Quote section */
+
+.quote-section{
+	display: flex;
+	flex-direction: column;
+	background-color: #E5E7EB;
+	padding: 5rem;
+	align-items: center;
+}
+
+.quote {
+	font-size: 36px;
+	width: 60vw;
+	display: flex;
+	flex-direction: column;
+	color: #1F2937;
+}
+
+.quote p {
+	padding-top: 1rem;
+	font-size: 25px;
+	font-weight: 700;
+	align-self: flex-end;
+	font-style: normal;
+}
+
+/* Call to action section */
+.call-to-action-section {
+	padding: 6rem 6rem;
+}
+
+.call-to-action-section .wrapper {
+	color: white;
+	display: flex;
+	background-color: #007bff;
+	padding: 3% 6%;
+	border-radius: 8px;
+}
+
+.call-to-action-card {
+	flex: 2 1 0;
+}
+
+button {
+	flex: 1 2 0;
+	max-width: 140px;
+	background-color: #007bff;
+	border-radius: 8px;
+	font-weight: bold;
+	font-size: 19px;
+	border: 2px solid white;
+	color: white;
+}
+
+.wrapper .call-to-action-card p:first-child {
+	font-size: 22px;
+	font-weight: bold;
+	color: white;
+}
+
+.call-to-action-card p {
+	color: #E5E7EB;
+} 
+
+p {
+	font-size: 19px;
+}
+
+/* footer */
+
+.footer {
+	background-color: #1F2937;
+	/* margin-top: auto; */
+	display: flex;
+	justify-content: center;
+	padding: 2rem 0;
+	color: white;
+}
